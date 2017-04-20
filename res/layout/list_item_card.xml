@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:paddingLeft="15dp"
+	android:paddingRight="15dp"
+	android:descendantFocusability="beforeDescendants">
+
+	<RelativeLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingLeft="10dp"
+			android:paddingTop="10dp"
+			android:paddingBottom="10dp"
+			android:paddingRight="10dp"
+			android:background="@drawable/card_background"
+			android:descendantFocusability="afterDescendants">
+		        
+			    <ImageView
+					android:id="@+id/imgFood"
+					android:layout_width="100dp"
+					android:layout_height="100dp"
+					android:radius="5dp"
+					android:src="@drawable/ayam_goreng" />
+
+				<TextView
+				    android:id="@+id/txtProduct"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_alignTop="@+id/imgFood"
+				    android:layout_marginLeft="21dp"
+				    android:layout_marginTop="16dp"
+				    android:layout_toRightOf="@+id/imgFood"
+				    android:text="@string/txtProduct"
+				    android:textColor="#000000" />
+
+				<TextView
+				    android:id="@+id/txtHarga"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_alignLeft="@+id/txtProduct"
+				    android:layout_centerVertical="true"
+				    android:text="@string/txtHarga"
+				    android:textColor="#000000" />
+
+				<Button
+				    android:id="@+id/btnAdd"
+				    style="?android:attr/buttonStyleSmall"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_alignBottom="@+id/imgFood"
+				    android:layout_alignLeft="@+id/edtQty"
+				    android:layout_marginLeft="71dp"
+				    android:text="@string/str_add" />
+
+				<EditText
+				    android:id="@+id/edtQty"
+				    android:layout_width="50dp"
+				    android:layout_height="wrap_content"
+				    android:layout_alignBottom="@+id/btnAdd"
+				    android:layout_alignLeft="@+id/txtHarga"
+				    android:background="@drawable/custom_edit_text"
+				    android:ems="10"
+				    android:gravity="center_horizontal"
+				    android:textAlignment="center"
+				    android:inputType="phone"
+				    android:hint="0"
+				    android:textColorHint="#000000"
+				    android:textColor="#000000" >
+				</EditText>
+
+		</RelativeLayout>
+
+</FrameLayout>
