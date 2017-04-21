@@ -1,11 +1,11 @@
 package id.apps.resto;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 
 public class MainActivity extends Activity {
 	
@@ -26,10 +26,19 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				showProgressDialog();
 				Intent i_intent = new Intent(MainActivity.this, ProductActivity.class);
 				startActivity(i_intent);
+				MainActivity.this.finish();
 			}
 		});
+	}
+	
+	private void showProgressDialog() {
+		// TODO Auto-generated method stub
+		ProgressDialog progressDialog = new ProgressDialog(this);
+		progressDialog.setMessage("Tunggu, sedang diproses");
+		progressDialog.show();
 	}
 
 }

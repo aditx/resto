@@ -8,10 +8,10 @@
     <!-- String Tambahan -->
     <string name="order_remark">Please tap to order</string>
     <string name="btn_order">Order Food</string>
-    <string name="title_activity_product">ProductActivity</string>
+    <string name="title_activity_product">Product List</string>
     <string name="txtProduct">Product</string>
     <string name="txtHarga">Harga</string>
-    <string name="title_activity_order">OrderActivity</string>
+    <string name="title_activity_order">Order Cart</string>
     
     <string name="str_add">Add</string>
 
