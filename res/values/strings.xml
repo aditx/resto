@@ -14,5 +14,8 @@
     <string name="title_activity_order">Order Cart</string>
     
     <string name="str_add">Add</string>
+    
+    <string name="str_jml_pesanan">Jumlah Pesanan</string>
+    <string name="str_no_meja">No Meja</string>
 
 </resources>

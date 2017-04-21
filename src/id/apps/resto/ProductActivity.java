@@ -1,6 +1,8 @@
 package id.apps.resto;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -69,12 +71,36 @@ public class ProductActivity extends Activity {
 		switch(item.getItemId()) {
 			case R.style.AppTheme:
 				//Toast.makeText(getBaseContext(), "Clicked", Toast.LENGTH_SHORT).show();
-				Intent i_intent = new Intent(ProductActivity.this, OrderActivity.class);
-				startActivity(i_intent);
+				showAlertDialog();
 				break;
 		}
 		
 		return true;	
 	}
-
+	
+	private void showAlertDialog() {
+		AlertDialog.Builder builder = new AlertDialog.Builder(this);
+		builder.setMessage("Apakah pesanan anda telah selesai ?")
+		.setCancelable(true)
+		.setPositiveButton("Ya", new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				// TODO Auto-generated method stub
+				Intent i_intent = new Intent(ProductActivity.this, OrderActivity.class);
+				startActivity(i_intent);
+			}
+		})
+		.setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+			
+			@Override
+			public void onClick(DialogInterface dialog, int which) {
+				// TODO Auto-generated method stub
+				dialog.cancel();
+			}
+		});
+		
+		AlertDialog alertDialog = builder.create();
+		alertDialog.show();
+	}
 }

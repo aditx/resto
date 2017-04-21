@@ -67,7 +67,7 @@ public class CardArrayAdapter extends ArrayAdapter<Card> {
             
             row.setTag(viewHolder);
         } else {
-            viewHolder = (CardViewHolder)row.getTag();
+            viewHolder = (CardViewHolder) row.getTag();
         }
         
         final Card card = getItem(position);
