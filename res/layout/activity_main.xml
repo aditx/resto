@@ -7,7 +7,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="id.apps.resto.MainActivity"
-    android:background="#FFFFFF" >
+    android:background="@drawable/food_bg"
+    android:scaleType="centerCrop" >
 
     <Button
         android:id="@+id/btn_order"
@@ -36,9 +37,10 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="165dp"
+        android:textColor="#FFFFFF"
         android:text="@string/order_remark" />
 
-    <ImageView
+    <!-- <ImageView
         android:id="@+id/imgOffers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -46,6 +48,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="25dp"
         android:layout_marginBottom="49dp"
-        android:contentDescription="@string/order_remark" />
+        android:contentDescription="@string/order_remark" /> -->
 
 </RelativeLayout>

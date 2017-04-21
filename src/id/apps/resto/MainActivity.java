@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends Activity {
 	
-	private ImageView imgOffers;
+	//private ImageView imgOffers;
 	private Button btn_order;
 
 	@Override
@@ -17,8 +17,8 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
-		imgOffers = (ImageView) findViewById(R.id.imgOffers);
-		imgOffers.setImageResource(R.drawable.bg_offers);
+//		imgOffers = (ImageView) findViewById(R.id.imgOffers);
+//		imgOffers.setImageResource(R.drawable.bg_offers);
 		
 		btn_order = (Button) findViewById(R.id.btn_order);
 		btn_order.setOnClickListener(new View.OnClickListener() {
