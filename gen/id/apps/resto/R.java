@@ -42,18 +42,23 @@ public final class R {
         public static final int soto=0x7f020011;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000c;
-        public static final int btnAdd=0x7f08000a;
+        public static final int action_settings=0x7f080011;
+        public static final int btnAdd=0x7f08000f;
         public static final int btn_order=0x7f080000;
-        public static final int card_listView=0x7f080006;
-        public static final int edtQty=0x7f08000b;
-        public static final int imgFood=0x7f080007;
-        public static final int txt1=0x7f080005;
-        public static final int txtHarga=0x7f080009;
-        public static final int txtOrder1=0x7f080002;
-        public static final int txtOrder2=0x7f080003;
-        public static final int txtOrder3=0x7f080004;
-        public static final int txtProduct=0x7f080008;
+        public static final int card_listView=0x7f08000b;
+        public static final int edtQty=0x7f080010;
+        public static final int imgFood=0x7f08000c;
+        public static final int relativeLayout1=0x7f080003;
+        public static final int relativeLayout2=0x7f080008;
+        public static final int txt1=0x7f080007;
+        public static final int txtDateOrder=0x7f080002;
+        public static final int txtHarga=0x7f08000e;
+        public static final int txtObjDateOrder=0x7f08000a;
+        public static final int txtOrdeerItem=0x7f080009;
+        public static final int txtOrder1=0x7f080004;
+        public static final int txtOrder2=0x7f080005;
+        public static final int txtOrder3=0x7f080006;
+        public static final int txtProduct=0x7f08000d;
         public static final int txtRemark=0x7f080001;
     }
     public static final class layout {
@@ -77,6 +82,8 @@ public final class R {
          */
         public static final int order_remark=0x7f050003;
         public static final int str_add=0x7f050009;
+        public static final int str_date_order=0x7f05000c;
+        public static final int str_jml_item_pesanan=0x7f05000d;
         public static final int str_jml_pesanan=0x7f05000a;
         public static final int str_no_meja=0x7f05000b;
         public static final int title_activity_order=0x7f050008;

@@ -17,5 +17,8 @@
     
     <string name="str_jml_pesanan">Jumlah Pesanan</string>
     <string name="str_no_meja">No Meja</string>
+    
+    <string name="str_date_order">Tanggal Pesanan</string>
+    <string name="str_jml_item_pesanan">Data Item yang dipesan :</string>
 
 </resources>
